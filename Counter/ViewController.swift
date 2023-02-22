@@ -86,6 +86,7 @@ extension ViewController: AVAudioPlayerDelegate {
                 self.audioPlayersLock.lock()
                 self.audioPlayers.append(audioPlayer)
                 self.audioPlayersLock.unlock()
+
                 // audioPlayer.volume = 1
                 audioPlayer.prepareToPlay()
                 audioPlayer.play()
